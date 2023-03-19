@@ -1,0 +1,17 @@
+<h1>Current count: <%= @count %></h1>
+
+<.form let={f} for={@conn} action={Routes.count_path(@conn, :count)}>
+  <%= label f, :number %>
+  <%= number_input f, :increment %>
+  <%= submit "Increment" %>
+</.form>
+
+<%!-- <%= form_for @conn, Routes.count_path(@conn, :count), fn f -> %>
+    <%= number_input f, :increment %>
+    <%= submit "Increment" %>
+<% end %> --%>
+
+
+
+
+
